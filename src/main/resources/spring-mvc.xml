@@ -21,11 +21,11 @@
     <mvc:annotation-driven />
 
 
-    <bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping ">
+    <!--<bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping ">-->
 
 
-    </bean>
-    <bean id="handlerAdapter" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" />
+    <!--</bean>-->
+    <!--<bean id="handlerAdapter" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" />-->
 
     <bean id="mappingJacksonHttpMessageConverter"
           class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
@@ -36,7 +36,7 @@
         </property>
     </bean>
 
-    <bean class="com.minderliu.config.MySwaggerConfig"/>
+    <bean class="config.SwaggerConfiguration"/>
 
 
 

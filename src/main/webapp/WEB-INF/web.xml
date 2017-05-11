@@ -17,6 +17,9 @@
         <param-value>classpath:log4j.properties</param-value>
     </context-param>
 
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
     <servlet-mapping>
         <servlet-name>default</servlet-name>
         <url-pattern>*.png</url-pattern>
@@ -43,7 +46,7 @@
 
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:spring-mvc.xml,classpath:spring-mybatis.xml</param-value>
+            <param-value>classpath:spring-mvc.xml</param-value>
 
         </init-param>
         <load-on-startup>1</load-on-startup>
