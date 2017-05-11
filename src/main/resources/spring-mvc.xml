@@ -36,9 +36,10 @@
         </property>
     </bean>
 
+    <bean class="com.minderliu.config.MySwaggerConfig"/>
 
 
 
+    <mvc:default-servlet-handler />
 
-
- </beans>
+</beans>
